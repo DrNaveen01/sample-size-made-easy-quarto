@@ -22,8 +22,12 @@ jobs:
           fetch-depth: 0
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-      - name: Render HTML book
-        run: quarto render --to html
+      - name: Verify all book outputs
+        run: |
+          test -f _book/index.html
+          test -f _book/sample-size-made-easy.pdf
+          test -f _book/sample-size-made-easy.epub
+          touch _book/.nojekyll
       - name: Verify output
         run: test -f _book/index.html
       - name: Publish HTML to gh-pages
