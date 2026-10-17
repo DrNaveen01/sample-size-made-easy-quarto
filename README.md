@@ -4,8 +4,6 @@
 
 This is an editable, reproducible Quarto Book project with **36 short chapters across six parts, five appendices, bibliography, print/HTML styling, exercises, callouts, and source R examples**. The foundation-course slide deck and author-provided worked examples are **not included yet**. Every chapter marks where its second example should be inserted.
 
-
-
 A local TeX installation with **XeLaTeX** (e.g. TeX Live) is required for the PDF edition. The PDF is **6 × 9 inches** as a preliminary Amazon paperback trim-size layout, not a final print-ready proof. Publisher-specific cover, spine, bleeds, margins, fonts and actual pagination still need review.
 
 To validate the independent baseline arithmetic using local R:
