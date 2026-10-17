@@ -1,0 +1,40 @@
+# Interpreting Planning Plots and Sensitivity Analyses {#sec-planning-sensitivity}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Construct one-way sensitivity analyses.
+- Explain robustness of the required sample to parameter uncertainty.
+:::
+
+## The idea
+
+A single numerical sample-size estimate hides uncertainty in assumed effect sizes, SDs, prevalence, ICC and recruitment loss. Sensitivity analysis recalculates the planning target over plausible alternative values while keeping the research objective fixed. A plot should identify the varied parameter, units, fixed assumptions and result measure.
+
+## When and how to apply it
+
+Sensitivity plots make substantive decisions visible; they do not justify choosing the most convenient parameter. Multivariable or scenario-based sensitivity may be needed when inputs are correlated. Where analytical approximations are unreliable, simulation-based planning and specialist review should be considered.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+Suppose anticipated prevalence ranges from 0.20 to 0.50. At fixed precision 0.05, examine how the simple independent sample-size requirement changes.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Never report the lowest required sample from a sensitivity plot as the final number without justification.
+:::
+
+## Hands-on exercise
+
+Write two clinically plausible scenarios (optimistic and conservative) for one dissertation protocol.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Report plausible ranges, not just the most convenient sample-size result.
+
+## Essential reading
+
+[@cook2018]

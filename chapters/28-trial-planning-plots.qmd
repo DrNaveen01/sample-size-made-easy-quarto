@@ -1,0 +1,40 @@
+# Sample Size, Statistical Power and Planning Plots {#sec-trial-planning-plots}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Identify effect, power and margin sensitivity plots.
+- Explain why a plan should be evaluated across plausible inputs.
+:::
+
+## The idea
+
+Planning plots turn one sample-size number into a decision surface. A power curve holds the effect and method fixed while varying sample size; an effect sensitivity plot shows how required size changes with plausible expected differences; a margin plot shows the effect of justified boundary choices in non-inferiority and equivalence designs.
+
+## When and how to apply it
+
+The figure should show the hypothesis boundary, selected outcome direction, expected effect and clinically relevant margin without confusing these with confidence intervals from observed data. Sensitivity plots are planning tools, not post-hoc evidence that the selected assumptions are correct.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+An investigator changes the expected treatment difference from 5 to 3 points. The smaller effect generally requires more participants for the same power under a stable variance model.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+A more generous non-inferiority margin may lower the required sample size but is not automatically scientifically defensible.
+:::
+
+## Hands-on exercise
+
+Prepare one planning plot from the calculator, label all units and write two sentences explaining the trade-off.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Planning plots expose how sample-size claims depend on uncertain assumptions.
+
+## Essential reading
+
+[@cook2018; @consort2025]

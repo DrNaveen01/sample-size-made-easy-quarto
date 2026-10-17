@@ -1,0 +1,36 @@
+# Cluster Size, Number of Clusters and Unequal Clusters {#sec-cluster-size}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Distinguish persons per cluster from number of clusters.
+- Explain why unequal cluster sizes can reduce precision.
+:::
+
+## The idea
+
+A cluster design has at least two dimensions: the number of clusters and the number of participants observed within each cluster. Increasing the number of clusters generally contributes different information from increasing the number of participants within already sampled clusters. Small numbers of randomised clusters can make individual-level approximations misleading.
+
+## When and how to apply it
+
+The simple equal-cluster DEFF does not fully describe variable cluster sizes. Under specific assumptions, a coefficient-of-variation adjustment is used as an approximation; actual cluster-randomised planning should match the design and analysis and assess degrees of freedom and cluster-level constraints.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+Compare 10 centres with 30 patients per centre and 20 centres with 15 patients per centre. Both have 300 patients, but the two designs need not have the same information.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+A cluster-randomised trial cannot be made valid by multiplying a standard trial sample size by a single design effect without checking cluster numbers and analysis.
+:::
+
+## Hands-on exercise
+
+Draw a grid of centres and participants. Change the number of centres and the within-centre ICC while holding the total count fixed.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+The number of clusters can be as important as the number of individuals.

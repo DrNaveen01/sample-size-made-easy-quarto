@@ -1,0 +1,30 @@
+# Glossary and Additional Resources {#sec-glossary}
+
+| Term | Plain-language meaning |
+|---|---|
+| Alpha | Prespecified type I error probability for a specified null test |
+| Beta | Probability of failing to reject the null under a specified alternative |
+| Power | $1-\beta$: probability of rejection at the chosen alternative under model assumptions |
+| Confidence interval | An interval procedure with stated long-run coverage under its model |
+| Absolute precision | Target half-width of an estimate’s confidence interval, in natural units |
+| Effect size | Magnitude of the anticipated difference or association |
+| ICC | Within-cluster similarity under an appropriate correlation model |
+| Design effect | Ratio of actual-design variance to specified benchmark-design variance |
+| FPC | Finite-population correction under eligible sampling assumptions |
+| Non-response | Failure to obtain usable study participation or data, depending on definition |
+| Non-inferiority | Excluding loss of effect greater than a justified margin |
+| Equivalence | Ruling out differences outside justified lower and upper bounds |
+| AUC | ROC area, a summary measure of rank discrimination |
+
+## Companion links
+
+- [Quarto Books documentation](https://quarto.org/docs/books/)
+- [Companion sample-size calculator](https://github.com/DrNaveen01/sample-size-calculator)
+- [CONSORT 2025 explanation and elaboration](https://doi.org/10.1136/bmj-2024-081124)
+- [DELTA² sample-size guidance](https://doi.org/10.1136/bmj.k3750)
+- [ICH E9 and E9(R1) guidance](https://www.ema.europa.eu/en/scientific-guidelines/ich-e9-statistical-principles-clinical-trials)
+- [Buderer on diagnostic sample-size planning](https://doi.org/10.1111/j.1553-2712.1996.tb03538.x)
+
+::: {.callout-note appearance="simple"}
+Links, edition information and source relevance must be rechecked at final copy-editing. The current source list is deliberately focused and will expand after integration of the teaching-slide bibliography.
+:::

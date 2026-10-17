@@ -1,0 +1,40 @@
+# Two-Sided Difference Testing {#sec-two-sided-difference}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- State the null and alternative for a two-sided difference test.
+- Interpret the limitations of a non-significant result.
+:::
+
+## The idea
+
+A two-sided difference test commonly uses the null hypothesis $H_0: \Delta=0$ against $H_1:\Delta\ne0$, where $\Delta$ is a consistently signed group difference. Planning specifies an anticipated alternative difference, alpha, power and appropriate variance model. This was previously described as an “equality” objective in the calculator; the teaching term **two-sided difference testing** is less misleading.
+
+## When and how to apply it
+
+The null hypothesis refers to the equality of population parameters under the model, not the study goal of proving that therapies are the same. Failure to reject $H_0$ does not imply equivalence or non-inferiority.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+A trial expects a five-point difference in a symptom score; its null is zero difference and it plans 80% power under the specified alternative.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+“No statistically significant difference” is not evidence that the groups are clinically equivalent.
+:::
+
+## Hands-on exercise
+
+Write the null and alternative hypotheses for a mean difference and a risk difference, using signed group order.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+A failure to find a difference never establishes equivalence.
+
+## Essential reading
+
+[@ichE9; @consort2025]

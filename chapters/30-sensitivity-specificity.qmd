@@ -1,0 +1,62 @@
+# Sample Size for Sensitivity and Specificity {#sec-sensitivity-specificity}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Identify separate diseased and non-diseased requirements.
+- Convert stratum targets to an expected recruitment total.
+:::
+
+## The idea
+
+Sensitivity is the proportion of reference-standard-positive participants testing positive; specificity is the proportion of reference-standard-negative participants testing negative. Their precision depends on **different denominators**. A study that estimates both must plan adequate numbers of participants with and without the target condition. Expected disease prevalence becomes important when recruiting from one undifferentiated clinical population.
+
+## When and how to apply it
+
+A simple Wald approximation for sensitivity precision is $n_D\approx Z^2 Se(1-Se)/d^2$, where $n_D$ is the number of diseased participants. The current calculator also offers Wilson-based anticipated intervals. Separate target quotas and an expected prevalence-based total should not be conflated with guaranteed counts.
+
+## Formula at a glance
+
+$$
+n_D\approx\frac{Z^2Se(1-Se)}{d^2}\qquad n_{ND}\approx\frac{Z^2Sp(1-Sp)}{d^2}
+$$
+
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+For anticipated sensitivity 0.85 and half-width 0.05 at 95% confidence, the Wald expression gives $1.96^2(0.85)(0.15)/(0.05^2)=195.92$, or **196 diseased participants**. Additional non-diseased participants are needed to estimate specificity.
+:::
+
+::: {.panel-tabset}
+
+### Calculation logic
+
+The example uses the stated planning assumptions and mathematical approximation. Explain why they apply before reporting the numerical result.
+
+### Copy-and-run R
+
+```r
+z <- qnorm(.975); se <- .85; d <- .05
+ceiling(z^2 * se * (1-se) / d^2)
+```
+
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+A required 196 diseased participants does not mean that recruiting 196 unselected clinic attendees will suffice.
+:::
+
+## Hands-on exercise
+
+Repeat for anticipated specificity 0.90; combine the two stratum targets under expected prevalence 20%, and state the limitations of expected recruitment.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Sensitivity and specificity depend on different disease-status denominators.
+
+## Essential reading
+
+[@buderer1996]

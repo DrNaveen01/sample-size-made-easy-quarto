@@ -1,0 +1,40 @@
+# Confidence, Precision, Alpha, Beta and Power {#sec-confidence-alpha-power}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Interpret confidence level, precision, alpha, beta and power.
+- Explain how demanding greater precision or power affects sample size.
+:::
+
+## The idea
+
+A 95% confidence level often uses $Z_{0.975}\approx 1.96$ in a normal-approximation interval. Absolute precision $d$ is usually expressed in the natural scale of the outcome (for a proportion, often percentage points). The type I error rate $\alpha$ controls the long-run false-rejection probability under a specified null model; $\beta$ is the probability of failing to reject under the specified alternative; power is $1-\beta$.
+
+## When and how to apply it
+
+Reducing a confidence-interval half-width from 0.10 to 0.05 typically quadruples the usual simple proportion planning size when other assumptions are unchanged. Increasing target power generally increases required sample size, but the magnitude also depends on the effect size and variance.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+A prevalence project changes planned precision from ±10 to ±5 percentage points. Discuss the approximate change in required sample size before calculation.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+“95% confidence” does not mean there is a 95% probability that this fixed population parameter lies in a realised frequentist confidence interval.
+:::
+
+## Hands-on exercise
+
+Write a single sentence defining each symbol: $d$, $\alpha$, $\beta$, $1-\beta$ and $Z_{1-\alpha/2}$.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Confidence, precision, alpha and power describe different sources or controls of uncertainty.
+
+## Essential reading
+
+[@cook2018]

@@ -1,0 +1,58 @@
+# Understanding and Calculating Pooled Standard Deviation {#sec-pooled-standard-deviation}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Compute the sample-size-weighted pooled SD from a reference study.
+- Distinguish a pooled SD assumption from unequal group SDs.
+:::
+
+## The idea
+
+When the study design supports a common within-group SD, reference-study group SDs can be combined by degrees-of-freedom weighting: $s_p=\sqrt{[(n_1-1)s_1^2+(n_2-1)s_2^2]/(n_1+n_2-2)}$. These reference counts are used to estimate variability; they are not the allocation targets for a future trial.
+
+## When and how to apply it
+
+An explicitly reported pooled SD can be entered directly if its definition and context are appropriate. Pooling two markedly different SDs may conceal variance heterogeneity. If a planned method allows separate variances, entering the two SDs may be preferable.
+
+## Formula at a glance
+
+$$
+s_p=\sqrt{\frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{n_1+n_2-2}}
+$$
+
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+A reference study reports $s_1=15$, $n_1=50$, $s_2=20$, $n_2=100$. Degree-of-freedom weighting gives a pooled SD of approximately **18.495** units.
+:::
+
+::: {.panel-tabset}
+
+### Calculation logic
+
+The example uses the stated planning assumptions and mathematical approximation. Explain why they apply before reporting the numerical result.
+
+### Copy-and-run R
+
+```r
+n1 <- 50; n2 <- 100; s1 <- 15; s2 <- 20
+sqrt(((n1-1)*s1^2 + (n2-1)*s2^2)/(n1+n2-2))
+```
+
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+The arithmetic mean of 15 and 20 is not the correctly weighted pooled SD.
+:::
+
+## Hands-on exercise
+
+Reproduce the result in R and explain why the reference group counts enter as $n_1-1$ and $n_2-1$.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Pooled SD is degrees-of-freedom weighted, and pooling is an assumption rather than a fact.

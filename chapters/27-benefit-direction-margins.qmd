@@ -1,0 +1,40 @@
+# Direction of Benefit and Clinical Margins {#sec-benefit-direction-margins}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Make difference direction explicit.
+- Relate clinical margins to outcomes and target effects.
+:::
+
+## The idea
+
+Before choosing a directional objective, define the group order (for example, new minus standard) and outcome desirability. Higher survival or recovery scores may be favourable, while lower blood pressure or complication risk may be favourable. Reversing group order changes the sign of the effect and requires a corresponding conversion of margins.
+
+## When and how to apply it
+
+A margin is not selected merely because the resulting sample size is manageable. Its justification should address clinical consequences, comparability with previous evidence, measurement scale and population. Planning plots can expose how sensitive the sample size is to the chosen margin.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+A non-inferiority margin of +5 mmHg may be interpretable when lower blood pressure is better, whereas a recovery endpoint may use a negative margin under new-minus-control coding.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Input errors in “higher is better” settings can invert the clinical meaning of a hypothesis.
+:::
+
+## Hands-on exercise
+
+Produce a two-column translation table for an adverse-event outcome and a recovery outcome: define signed difference, benefit direction and unacceptable region.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Clinical direction and sign convention must be checked together.
+
+## Essential reading
+
+[@ichE9; @cook2018]

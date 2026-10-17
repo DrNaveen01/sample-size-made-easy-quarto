@@ -1,0 +1,26 @@
+# Formula Reference Sheets {#sec-formula-sheet}
+
+::: {.callout-warning appearance="simple"}
+Formulas are **conditional approximations**, not universal rules. The analytical method, sampling design and rounding convention must be justified before use.
+:::
+
+| Planning aim | Formula or relationship | Important qualification |
+|---|---|---|
+| Single proportion precision | $n_0=Z^2p(1-p)/d^2$ | Normal approximation; independent observations |
+| Single mean precision | $n_0=Z^2\sigma^2/d^2$ | Anticipated SD and precision share units |
+| Recruitment allowance | $n_{recruit}=\lceil n_{complete}/(1-L)\rceil$ | Explicit convention; does not correct attrition bias |
+| Finite-population approximation | $n_{FPC}=n_0/[1+(n_0-1)/N]$ | Specified finite population and applicable sampling design |
+| Equal-size cluster DEFF | $1+(m-1)\rho$ | Approximation; equal clusters, compatible estimand |
+| Taro Yamane | $n=N/(1+Ne^2)$ | Simplified survey expression with restrictive conditions |
+| Two independent means, balanced | $2\sigma^2(Z_{1-\alpha/2}+Z_{1-\beta})^2/\Delta^2$ per group | Common SD, normal approximation |
+| RR-based second-group risk | $p_2=RR\,p_1$ | Valid probability and consistent event definition |
+| OR-based second-group risk | $p_2=OR\,p_1/(1-p_1+OR\,p_1)$ | OR is not usually equal to RR |
+| Pooled reference SD | $s_p=\sqrt{[(n_1-1)s_1^2+(n_2-1)s_2^2]/(n_1+n_2-2)}$ | Assumes common within-group variance |
+| Diagnostic sensitivity precision | $n_D\approx Z^2Se(1-Se)/d^2$ | Diseased participants; Wald approximate planning |
+| Diagnostic specificity precision | $n_{ND}\approx Z^2Sp(1-Sp)/d^2$ | Non-diseased participants; Wald approximate planning |
+
+## Reporting checklist
+
+For each calculation record: primary outcome and time point; objective; estimand; unit of measurement; design and sampling method; sources for parameters; formula or software method; assumptions; confidence or alpha/power; margins; allocation; design adjustments; recruitment allowance; rounding; complete and recruitable sample sizes.
+
+For comparisons, a fully specified test and variance convention are necessary; there is no single universal two-proportion or two-mean formula. See [@consort2025; @cook2018].

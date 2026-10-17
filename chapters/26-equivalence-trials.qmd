@@ -1,0 +1,40 @@
+# Equivalence Trials {#sec-equivalence-trials}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Define lower and upper equivalence bounds.
+- Explain the logic of two one-sided tests.
+:::
+
+## The idea
+
+Equivalence asks whether a treatment difference is sufficiently close to zero that clinically important departures in either direction can be excluded. Set a lower bound $L$ and upper bound $U$ in advance, commonly with $L<0<U$. A two-one-sided-test (TOST) approach requires evidence that $\Delta>L$ **and** $\Delta<U$ at the chosen per-test alpha, which corresponds to an appropriate confidence interval lying entirely within the bounds.
+
+## When and how to apply it
+
+A two-sided test against zero does not answer this question. Nor does calculating power separately for each one-sided component and treating the larger value as joint power. The trial objective and clinically justified margins govern planning.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+For a standardised difference margin of (-0.10,+0.10), compare a confidence interval (-0.08,+0.07) with (-0.12,+0.04). Only the former is wholly inside the interval.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+A nonsignificant equality test is not an equivalence test.
+:::
+
+## Hands-on exercise
+
+Draw the allowable equivalence region and compare symmetric with asymmetric margins.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Equivalence requires both one-sided criteria; nonsignificance is not enough.
+
+## Essential reading
+
+[@ichE9; @cook2018]

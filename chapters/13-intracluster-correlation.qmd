@@ -1,0 +1,36 @@
+# Intracluster Correlation Coefficient {#sec-intracluster-correlation}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Interpret ICC as correlation within clusters.
+- Recognise uncertainty in an ICC borrowed from other studies.
+:::
+
+## The idea
+
+ICC summarises similarity of measurements obtained from units within the same cluster under an appropriate model. In surveys or cluster-randomised studies, patients in the same health facility, school or village may have more similar outcomes than patients in different clusters. Positive ICC reduces the information contributed by each additional person within a fixed cluster.
+
+## When and how to apply it
+
+The relevant ICC is outcome-specific and depends on the population, cluster definition and measurement scale. Estimates from earlier studies can be imprecise, especially when the number of clusters was small. A sensitivity analysis across defensible values is preferable to treating one point estimate as exact.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+A study plans measurements from 20 participants in each health centre. Compare the planning implications of ICC 0, 0.01 and 0.05.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+The ICC of an individual-level endpoint is not the same as the correlation between two repeated measurements from one person or the correlation between paired AUC estimates.
+:::
+
+## Hands-on exercise
+
+Locate an ICC estimate in a relevant published study and record how it was obtained.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+The relevant ICC belongs to a defined endpoint and cluster structure.

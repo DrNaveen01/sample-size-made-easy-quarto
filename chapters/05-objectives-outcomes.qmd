@@ -1,0 +1,40 @@
+# Research Objectives, Outcomes and Sample Size {#sec-objectives-outcomes}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Identify the primary outcome and estimand.
+- Translate a research objective into a planning question.
+:::
+
+## The idea
+
+The research objective determines the quantity being estimated or tested. “To study diabetes” is not enough. “To estimate the prevalence of diabetes among adults registered with the primary health centre” identifies a proportion; “to compare mean HbA1c at three months” identifies a comparative continuous outcome. The primary endpoint, time point and relevant participant unit should be determined before calculation.
+
+## When and how to apply it
+
+A hypothesis, outcome scale, study design and planned analysis should align. Multiple co-primary endpoints, repeated observations and subgroup tests may require design-specific planning or multiplicity considerations. Select a scientifically meaningful primary objective instead of choosing a formula to match a convenient sample size.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+Convert “effect of counselling on diabetes” into (a) a prevalence-estimation objective and (b) a two-arm difference in mean HbA1c at a prespecified time.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Do not use a single-proportion prevalence calculation to justify an interventional comparison whose primary endpoint is a between-group mean difference.
+:::
+
+## Hands-on exercise
+
+For three dissertation titles, write the primary estimand, endpoint scale, observation unit and suitable family of methods.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Define the endpoint and estimand before choosing a calculator module.
+
+## Essential reading
+
+[@ichE9; @cook2018]

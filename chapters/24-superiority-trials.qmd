@@ -1,0 +1,40 @@
+# Superiority Trials {#sec-superiority-trials}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Define the direction and threshold for superiority.
+- Separate statistical and clinical superiority.
+:::
+
+## The idea
+
+A superiority design seeks evidence that one intervention performs better than another on a prespecified endpoint. If higher outcome values are favourable and $\Delta=\mu_{new}-\mu_{control}$, a directional hypothesis could compare $\Delta$ with zero or a positive superiority margin. The direction of benefit and alpha convention must be stated.
+
+## When and how to apply it
+
+The minimum difference worth detecting need not equal the statistical null boundary. Planning based on a realistically important effect prevents a large but scientifically uninformative design. Changes to outcome direction require a corresponding change to the signed difference and inequality.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+A counselling intervention is expected to reduce HbA1c. With lower values better, define the mean difference sign and the one-sided rejection direction before calculating power.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Do not treat a statistically positive difference smaller than a prespecified clinically important threshold as automatically clinically meaningful.
+:::
+
+## Hands-on exercise
+
+Sketch the superiority region for both higher-is-better and lower-is-better outcomes.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Superiority requires a prespecified benefit direction and clinically meaningful target effect.
+
+## Essential reading
+
+[@ichE9; @cook2018]

@@ -1,0 +1,40 @@
+# Choosing the Right Sample Size Method {#sec-method-selection}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Select a method from endpoint, objective and design.
+- Identify when the book or calculator does not cover a design.
+:::
+
+## The idea
+
+Begin with the primary question rather than the list of formulas. The decision sequence is: **target population → design and sampling unit → primary estimand and outcome scale → estimation or testing → correlation/dependence → method and parameters → recruitment adjustments**. The method must match the planned primary analysis closely enough for planning purposes.
+
+## When and how to apply it
+
+For paired outcomes, cluster randomisation, survival outcomes, repeated measures and prediction-model development, the present calculator does not provide a complete validated method. Referral to design-specific references and appropriate statistical consultation is better than adapting an incompatible formula.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+Five scenarios: estimating obesity prevalence, comparing two independent mean HbA1c values, estimating sensitivity, evaluating a survival endpoint and developing a clinical prediction model. Identify which the current modules can address.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Availability of a calculator button does not determine whether a method is valid for a research objective.
+:::
+
+## Hands-on exercise
+
+Use Appendix B to classify ten unfamiliar research objectives, including at least three intentionally outside calculator scope.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+An unsupported research design needs another method—not a convenient substitute.
+
+## Essential reading
+
+[@riley2020; @ichE9]

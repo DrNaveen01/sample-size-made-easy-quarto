@@ -1,0 +1,42 @@
+# Practice Exercises and Editorial Review {#sec-practice}
+
+## Exercise set A: identify the correct objective
+
+1. Estimate the prevalence of anaemia among adult women with 95% confidence and a prespecified precision.
+2. Compare mean HbA1c at three months between two independently randomised groups.
+3. Determine whether a shorter antibiotic regimen is not unacceptably worse than standard care.
+4. Estimate sensitivity and specificity of a point-of-care test in the intended clinical population.
+5. Plan a model to predict postoperative infection risk using 15 candidate predictors.
+
+::: {.callout-note collapse="true" title="Model answers — expand after attempting"}
+1. Single-proportion precision (subject to actual sampling design).
+2. Independent-group mean comparison with justified effect, SD, alpha and power.
+3. Non-inferiority with a clinically justified signed margin and design-specific safeguards.
+4. Diagnostic accuracy planning with diseased and non-diseased requirements.
+5. Prediction-model development requires a specialised framework outside this calculator; see [@riley2020].
+:::
+
+## Exercise set B: audit a methods paragraph
+
+> “Sample size was 100 using a standard formula, 95% confidence, and 80% power.”
+
+Identify at least eight missing elements. Consider the outcome, estimand, intended inference, primary analysis, source of inputs, effect/precision, formula and variance conventions, population, allocation, missingness and rounding.
+
+## Worked-example intake template
+
+Every author-supplied example should include:
+
+- Research objective and design:
+- Primary outcome and estimand:
+- Population and sampling method:
+- Parameter values, units, citations and uncertainty:
+- Calculation method, generic formula and numerical substitution:
+- Complete requirement and recruitment adjustment:
+- R verification and test expectations:
+- Companion calculator version or commit:
+- Interpretation and protocol-ready wording:
+- Statistical reviewer, review date and disposition:
+
+## Reviewer decision
+
+**Accept / Revise / Reject / Deferred**, with documented statistical assumptions. Final PDF publication requires that no identified critical mathematical or methodological problem remains unresolved.

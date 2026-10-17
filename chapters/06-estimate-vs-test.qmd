@@ -1,0 +1,40 @@
+# Estimation Versus Hypothesis Testing {#sec-estimate-vs-test}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Distinguish precision planning from power planning.
+- Recognise what a confidence interval and statistical test answer.
+:::
+
+## The idea
+
+For **estimation**, the planning target is usually a specified interval width or precision. For **hypothesis testing**, the target typically specifies a null value, plausible alternative, significance threshold and probability of rejection under that alternative (power). The same outcome, such as a proportion, can lead to very different sample sizes for these two purposes.
+
+## When and how to apply it
+
+A confidence interval describes values compatible with observed data under the stated model. A power calculation is prospective and depends on a selected alternative; it does not estimate the probability that the research hypothesis is true. Planning must specify which question is primary.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+Compare “estimate anaemia prevalence within five percentage points” with “test whether two regimens differ in anaemia risk by ten percentage points.”
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+A non-significant test is not evidence of equivalence.
+:::
+
+## Hands-on exercise
+
+Label six objectives as estimation, superiority/difference testing or a specialised design, and justify each choice.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Precision planning and hypothesis testing answer different research questions.
+
+## Essential reading
+
+[@cook2018]

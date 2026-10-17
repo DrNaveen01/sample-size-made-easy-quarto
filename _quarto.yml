@@ -1,0 +1,113 @@
+project:
+  type: book
+  output-dir: _book
+book:
+  title: Sample Size Made Easy
+  subtitle: A Hands-On Practical Manual for Medical and Health Research
+  author: Dr Naveen Suthar
+  date: '2026-10-17'
+  date-format: D MMMM YYYY
+  description: A modular and reproducible practical manual for planning sample sizes in medical and
+    public health research. Working manuscript — draft for methodological and editorial review.
+  output-file: sample-size-made-easy
+  search: true
+  page-navigation: true
+  chapters:
+  - index.qmd
+  - preface.qmd
+  - part: Part I — Understanding Sampling and Sample Size
+    chapters:
+    - chapters/01-why-sample-size.qmd
+    - chapters/02-population-sample-frame.qmd
+    - chapters/03-sampling-methods.qmd
+    - chapters/04-replacement-sampling.qmd
+    - chapters/05-objectives-outcomes.qmd
+    - chapters/06-estimate-vs-test.qmd
+    - chapters/07-confidence-alpha-power.qmd
+  - part: Part II — Parameters and Adjustments
+    chapters:
+    - chapters/08-input-sources.qmd
+    - chapters/09-precision-effect-size.qmd
+    - chapters/10-nonresponse-attrition.qmd
+    - chapters/11-finite-population-correction.qmd
+    - chapters/12-design-effect.qmd
+    - chapters/13-intracluster-correlation.qmd
+    - chapters/14-cluster-size.qmd
+    - chapters/15-allocation-ratio.qmd
+  - part: Part III — Basic Sample Size Calculations
+    chapters:
+    - chapters/16-single-proportion.qmd
+    - chapters/17-single-mean.qmd
+    - chapters/18-yamane.qmd
+    - chapters/19-two-proportions.qmd
+    - chapters/20-or-rr-to-proportions.qmd
+    - chapters/21-two-means.qmd
+    - chapters/22-pooled-standard-deviation.qmd
+  - part: Part IV — Clinical Trial Objectives
+    chapters:
+    - chapters/23-two-sided-difference.qmd
+    - chapters/24-superiority-trials.qmd
+    - chapters/25-non-inferiority-trials.qmd
+    - chapters/26-equivalence-trials.qmd
+    - chapters/27-benefit-direction-margins.qmd
+    - chapters/28-trial-planning-plots.qmd
+  - part: Part V — Correlation and Diagnostic Accuracy
+    chapters:
+    - chapters/29-correlation.qmd
+    - chapters/30-sensitivity-specificity.qmd
+    - chapters/31-auc-planning.qmd
+    - chapters/32-compare-aucs.qmd
+  - part: Part VI — Application, Interpretation and Reporting
+    chapters:
+    - chapters/33-method-selection.qmd
+    - chapters/34-calculator-workflow.qmd
+    - chapters/35-planning-sensitivity.qmd
+    - chapters/36-reporting-and-appraisal.qmd
+  - references.qmd
+  appendices:
+  - appendices/A-formula-sheet.qmd
+  - appendices/B-method-selection.qmd
+  - appendices/C-reproducible-r.qmd
+  - appendices/D-practice-and-review.qmd
+  - appendices/E-glossary-resources.qmd
+  downloads:
+  - pdf
+  - epub
+lang: en
+bibliography: references.bib
+link-citations: true
+callout-appearance: simple
+number-depth: 2
+format:
+  html:
+    theme: cosmo
+    css: assets/book.css
+    toc: true
+    toc-depth: 3
+    code-copy: true
+    smooth-scroll: true
+    number-sections: true
+  pdf:
+    documentclass: scrbook
+    pdf-engine: xelatex
+    mainfont: TeX Gyre Termes
+    fontsize: 10pt
+    geometry:
+    - paperwidth=6in
+    - paperheight=9in
+    - top=0.85in
+    - bottom=0.8in
+    - inner=0.8in
+    - outer=0.65in
+    toc: true
+    number-sections: true
+    colorlinks: false
+    keep-tex: false
+  epub:
+    toc: true
+    number-sections: true
+execute:
+  echo: true
+  warning: false
+  message: false
+editor: visual

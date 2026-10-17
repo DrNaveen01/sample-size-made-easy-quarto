@@ -1,0 +1,58 @@
+# Understanding the Design Effect {#sec-design-effect}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Define design effect as a variance ratio.
+- Explain why a cluster design may require more observations.
+:::
+
+## The idea
+
+The design effect compares the variance under an actual sampling design with the variance that would be obtained under a specified simple-random-sampling benchmark. For common cluster-sampling approximations with equal cluster sizes $m$ and non-negative within-cluster correlation $\rho$, $DEFF\approx1+(m-1)\rho$. Multiplying an SRS-based sample size by this factor is a useful first-order approximation only when its assumptions fit the estimand and analysis.
+
+## When and how to apply it
+
+The design effect can differ across variables and estimands in the same survey. Stratification, weights and unequal clusters can alter it. For intervention studies randomised by cluster, planning requires additional attention to the number of clusters, cluster-level allocation and analysis.
+
+## Formula at a glance
+
+$$
+DEFF\approx1+(m-1)\rho
+$$
+
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+If $m=20$ and $\rho=0.02$, the simplified DEFF is $1+(19)(0.02)=1.38$. An initial SRS requirement of 400 complete observations would be inflated to roughly 552, before separately justified recruitment adjustments.
+:::
+
+::: {.panel-tabset}
+
+### Calculation logic
+
+The example uses the stated planning assumptions and mathematical approximation. Explain why they apply before reporting the numerical result.
+
+### Copy-and-run R
+
+```r
+design_effect <- function(m, icc) 1 + (m - 1) * icc
+design_effect(20, .02)
+```
+
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Do not treat “design effect = 2” as a default substitute for specifying the actual sampling design.
+:::
+
+## Hands-on exercise
+
+Derive the factor for $m=10$, $20$, $40$ at ICC values 0.01 and 0.05. Explain the observed trend.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Design effect is a variance comparison, not a universal sample-size surcharge.

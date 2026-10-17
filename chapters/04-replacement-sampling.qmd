@@ -1,0 +1,43 @@
+# Sampling With and Without Replacement {#sec-replacement-sampling}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Differentiate independent draws and finite-list selection.
+- Explain why the sampling fraction can affect variance.
+:::
+
+## The idea
+
+**With replacement**, a selected unit may be drawn again and successive draws can be modelled as independent under simple random sampling. **Without replacement**, a selected unit is not eligible for later draws. If a substantial fraction of a finite population is sampled without replacement, the usual independent-draw standard error can be larger than the appropriate finite-population standard error.
+
+## When and how to apply it
+
+For a simple random sample without replacement from $N$ units, a familiar finite correction to the standard error is $\sqrt{(N-n)/(N-1)}$. This principle motivates Chapter 11, but requires the relevant finite-population sampling assumptions.
+
+## Formula at a glance
+
+$$
+\mathrm{FPC}_{SE}=\sqrt{\frac{N-n}{N-1}}
+$$
+
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+Place 20 numbered cards in a container. Draw five cards, first returning each card before the next draw, and then repeating without returning cards. Compare possible duplicates and interpretation.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Sampling without replacement does not justify FPC for every clinical or experimental design.
+:::
+
+## Hands-on exercise
+
+List the number of unique people who might be represented under each method and explain why the sampling procedures differ.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+With-replacement and without-replacement sampling are different probability mechanisms.

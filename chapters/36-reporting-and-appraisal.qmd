@@ -1,0 +1,40 @@
+# Writing and Critically Appraising Sample Size Justifications {#sec-reporting-and-appraisal}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Write a reproducible sample-size methods paragraph.
+- Critically appraise adequacy of reported assumptions.
+:::
+
+## The idea
+
+A defensible sample-size statement reports the **primary endpoint, estimand, formula or algorithm, input estimates with sources, precision or type I error and power, group allocation, all relevant design adjustments, anticipated missingness, rounding and final required numbers**. When specialised designs are used, additional parameters are necessary. In trials, the current CONSORT 2025 explanation item 16a requires assumptions supporting sample size determination.
+
+## When and how to apply it
+
+The planned target should be specified prospectively. A convenient sample retrospectively labelled “calculated” is not equivalent to a pre-study justification. Protocol reports should identify the planned estimation or testing framework and the exact units of all clinically meaningful differences.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+Draft a paragraph for a prevalence estimate with $p=0.50$, $d=0.05$, 95% confidence and 10% anticipated non-response, explicitly naming the rounding approach.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+“Sample size was calculated using 95% confidence and 80% power” is insufficient, especially without endpoint, assumptions and anticipated effect.
+:::
+
+## Hands-on exercise
+
+Complete the critical appraisal checklist in Appendix D for a submitted sample-size methods paragraph.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+A reproducible sample-size paragraph explains the question, method, inputs and adjustments.
+
+## Essential reading
+
+[@consort2025; @cook2018]

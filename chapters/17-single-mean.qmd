@@ -1,0 +1,58 @@
+# Sample Size for a Single Mean {#sec-single-mean}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Identify expected SD and precision in the same units.
+- Compute a one-sample mean precision requirement.
+:::
+
+## The idea
+
+For a mean estimated from independent observations, a common approximate planning expression depends on the expected standard deviation $\sigma$, normal critical value and desired confidence-interval half-width $d$. The SD expresses outcome dispersion; precision expresses tolerated uncertainty in the estimated mean. These are different quantities but must have the same units.
+
+## When and how to apply it
+
+A small pilot may yield an unstable SD. Sensitivity analysis over plausible SDs provides a more defensible design than selecting the smallest reported value. Normal planning is not an exact small-sample t-based assurance procedure.
+
+## Formula at a glance
+
+$$
+n_0=\frac{Z_{1-\alpha/2}^2\sigma^2}{d^2}
+$$
+
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+To estimate mean haemoglobin with SD 10 g/L and half-width 2 g/L at 95% confidence, $n_0=1.96^2(10)^2/2^2=96.04$. Therefore, plan **97 complete observations**.
+:::
+
+::: {.panel-tabset}
+
+### Calculation logic
+
+The example uses the stated planning assumptions and mathematical approximation. Explain why they apply before reporting the numerical result.
+
+### Copy-and-run R
+
+```r
+sd <- 10; d <- 2
+ceiling(qnorm(.975)^2 * sd^2 / d^2)
+```
+
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Do not confuse a sample mean, SD, SE and confidence-interval width.
+:::
+
+## Hands-on exercise
+
+Compare the requirements when the anticipated SD increases from 10 to 15 g/L at the same precision.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Precision and SD must share units, and uncertainty in SD requires sensitivity analysis.

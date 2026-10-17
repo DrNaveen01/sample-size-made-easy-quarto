@@ -1,0 +1,47 @@
+# Equal and Unequal Allocation {#sec-allocation-ratio}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Define the direction of an allocation ratio.
+- Assess the efficiency implications of unequal allocation.
+:::
+
+## The idea
+
+For a two-group comparison, the allocation ratio must be defined consistently—for example, $k=n_2/n_1$, the expected complete observations in group 2 divided by group 1. Balanced allocation is often efficient under equal costs and variance structures, but other allocations may be justified by ethics, costs, anticipated recruitment or information differences.
+
+## When and how to apply it
+
+A 2:1 ratio is not interchangeable with a 1:2 ratio unless the groups are also relabelled. If recruitment losses differ by group, planned recruitment proportions may not match the desired analysable allocation ratio. State whether the displayed ratio refers to initial randomisation or complete observations.
+
+## Formula at a glance
+
+$$
+k=\frac{n_2}{n_1}
+$$
+
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+Plan a two-arm comparison with group 1 labelled “Standard care” and group 2 “New treatment.” Compare the meaning of $k=1$, $k=2$ and $k=0.5$.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Do not change allocation only to reduce one group’s sample without rechecking total power and interpretability.
+:::
+
+## Hands-on exercise
+
+Explain when extra recruitment into a cheaper or more accessible group could be reasonable.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+State the direction of the allocation ratio and distinguish analysable from recruited participants.
+
+## Essential reading
+
+[@consort2025]

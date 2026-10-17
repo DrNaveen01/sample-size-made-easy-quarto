@@ -1,0 +1,55 @@
+# Reproducible R Calculations {#sec-reproducible-r}
+
+This appendix uses **base R**, allowing calculation checks without Shiny or additional packages. A runnable file is supplied in `scripts/reproduce-examples.R`, and an independently oriented smoke-check file in `scripts/check-examples.R`.
+
+## Single proportion
+
+```r
+p <- 0.50
+d <- 0.05
+z <- qnorm(0.975)
+n0 <- z^2 * p * (1 - p) / d^2
+ceiling(n0) # 385 complete observations
+```
+
+## Finite population correction
+
+```r
+N <- 1000
+n_fpc <- n0 / (1 + (n0 - 1) / N)
+ceiling(n_fpc)
+```
+
+## Mean precision
+
+```r
+sd <- 10; precision <- 2
+ceiling(qnorm(0.975)^2 * sd^2 / precision^2)
+```
+
+## Two mean groups: balanced approximate normal method
+
+```r
+sd <- 15; difference <- 5
+alpha <- 0.05; power <- 0.80
+z_alpha <- qnorm(1 - alpha / 2)
+z_power <- qnorm(power)
+ceiling(2 * sd^2 * (z_alpha + z_power)^2 / difference^2)
+```
+
+## Sample-size sensitivity analysis
+
+```r
+precision_grid <- seq(0.03, 0.10, 0.005)
+n_grid <- ceiling(qnorm(.975)^2 * .5 * .5 / precision_grid^2)
+plot(precision_grid, n_grid, type = "b", xlab = "Absolute precision",
+     ylab = "Complete sample size")
+```
+
+::: {.callout-warning appearance="simple"}
+These are deliberately explicit approximations. A directly coded illustrative formula may not numerically match a software method using different null/alternative variances, interval construction or rounding. The book must record the precise method used for each final worked example.
+:::
+
+## Calculator-based replication
+
+See the [companion code repository](https://github.com/DrNaveen01/sample-size-calculator) for the application’s public R functions, documented methods, examples and validation scripts. Future textbook cases will pin a tested release tag or commit SHA.

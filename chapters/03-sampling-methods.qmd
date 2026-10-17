@@ -1,0 +1,40 @@
+# Probability and Non-Probability Sampling {#sec-sampling-methods}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Identify simple, systematic, stratified and cluster sampling.
+- Explain limitations of convenience and consecutive sampling.
+:::
+
+## The idea
+
+In **probability sampling**, the selection mechanism is specified so each eligible unit has a known, nonzero inclusion probability. Common designs include simple random, stratified, systematic and cluster sampling. **Non-probability approaches** such as convenience, purposive or consecutive sampling do not generally permit design-based inference to an entire target population without additional assumptions.
+
+## When and how to apply it
+
+Sample-size formulas should be matched to the sampling design and intended estimand. Stratification can change precision; clustering usually increases sampling variance when observations within clusters are positively correlated. A calculation cannot compensate for selection bias caused by convenience sampling.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+A researcher recruits the first 250 eligible antenatal clinic attendees; another samples names from a complete registry using a random-number generator. Compare what each sample can represent.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Do not label consecutive recruitment as simple random sampling.
+:::
+
+## Hands-on exercise
+
+Classify five planned studies by sampling technique and specify their sampling unit and target population.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+The selection procedure and the sample-size formula must describe the same sampling design.
+
+## Essential reading
+
+[@ichE9]

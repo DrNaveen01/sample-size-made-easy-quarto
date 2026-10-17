@@ -1,0 +1,62 @@
+# Sample Size for Two Independent Means {#sec-two-means}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Specify the mean difference and anticipated variability.
+- Calculate a balanced normal-approximation sample size.
+:::
+
+## The idea
+
+For a simple two-arm independent-groups comparison, define the expected between-group mean difference $\Delta$, the outcome SD, significance level, target power and allocation. Under a common SD and equal group sizes, a normal planning approximation has $n\approx2\sigma^2(Z_{1-\alpha/2}+Z_{1-\beta})^2/\Delta^2$ **per group**. Different-SD and unequal allocation formulations should use their corresponding variance expressions.
+
+## When and how to apply it
+
+The unit of the mean difference is the unit of the clinical measurement. The SD is not an arbitrary nuisance value; uncertainty in SD materially changes sample size. Normal-planning calculations are not exact Welch or Student t-based power methods.
+
+## Formula at a glance
+
+$$
+n_{per\;group}\approx\frac{2\sigma^2(Z_{1-\alpha/2}+Z_{1-\beta})^2}{\Delta^2}
+$$
+
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+Consider 100 versus 105 mmHg with anticipated common SD 15 mmHg, two-sided $\alpha=0.05$ and 80% power. Substitute $\Delta=5$ and $\sigma=15$ in the balanced formula; use the calculator to verify the selected method.
+:::
+
+::: {.panel-tabset}
+
+### Calculation logic
+
+The example uses the stated planning assumptions and mathematical approximation. Explain why they apply before reporting the numerical result.
+
+### Copy-and-run R
+
+```r
+sd <- 15; delta <- 5; za <- qnorm(.975); zb <- qnorm(.80)
+ceiling(2 * sd^2 * (za + zb)^2 / delta^2)
+```
+
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Entering a pooled SD in a formula assuming equal variances does not establish that equal variances are realistic.
+:::
+
+## Hands-on exercise
+
+Compare sample sizes for $\Delta=3$, 5 and 7 with SD 15 and record interpretation of smaller effects.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+The expected mean difference and anticipated variance drive two-group planning.
+
+## Essential reading
+
+[@cook2018]

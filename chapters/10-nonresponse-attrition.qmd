@@ -1,0 +1,47 @@
+# Non-Response, Attrition and Missing Data {#sec-nonresponse-attrition}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Distinguish complete observations from recruitment targets.
+- Understand why recruitment inflation does not repair bias.
+:::
+
+## The idea
+
+If $n_{complete}$ analysable records are required and the anticipated fraction without complete usable data is $L$, a planning approximation is $n_{recruit}=n_{complete}/(1-L)$, followed by appropriate upward rounding. The distinction between an expected loss of observations, failure to enrol and non-adherence matters. Inflation addresses anticipated quantity of usable data; it does not fix systematic differences between participants with and without outcomes.
+
+## When and how to apply it
+
+Different software implementations may inflate an unrounded analytical requirement before applying the ceiling or may first round up the complete requirement. These conventions can differ by one or more recruits. The reporting paragraph should identify the adopted convention, especially when explaining a software-generated answer.
+
+## Formula at a glance
+
+$$
+n_{recruit}=\left\lceil\frac{n_{complete}}{1-L}\right\rceil
+$$
+
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+For 385 **already rounded** complete observations and 10% anticipated unusable records, $\lceil385/0.90\rceil=428$. The calculator currently uses a different preserved convention for some legacy methods: it inflates the unrounded base (384.16), producing 427 in this example.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Never describe extra recruitment as correction for selection or attrition bias.
+:::
+
+## Hands-on exercise
+
+Compare 5%, 10% and 20% expected loss under the same rounding convention and write the adjusted target clearly.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Recruitment inflation protects expected usable counts, but does not remove bias.
+
+## Essential reading
+
+[@consort2025]

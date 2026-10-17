@@ -1,0 +1,40 @@
+# Why Do We Need a Sample Size? {#sec-why-sample-size}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Distinguish statistical adequacy from convenient recruitment.
+- Explain the implications of inadequate and excessive samples.
+:::
+
+## The idea
+
+A sample is not adequate merely because its size resembles that of an earlier dissertation. Required size follows from the research objective, outcome, sampling design, uncertainty and planned analysis. In estimation studies, the immediate aim is usually a specified confidence-interval precision; in comparative studies, it is commonly power for a specified target effect. Both require scientific justification of the input parameters.
+
+## When and how to apply it
+
+Large samples can make trivial effects statistically detectable, while small samples may produce imprecise estimates and fail to identify clinically important effects. More observations do not correct selection bias, measurement error or inappropriate analysis. Distinguish the *number needed for analysis* from the *number required for recruitment*.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+Two outpatient projects each plan to recruit 100 patients. One aims to estimate a prevalence with ±10 percentage points of precision; the other aims to detect a small difference between treatments. Why can the same sample size be acceptable for one question and inadequate for the other?
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+There is no defensible universal minimum such as 30, 50 or 100 participants for all medical studies.
+:::
+
+## Hands-on exercise
+
+Rewrite the two projects as estimands. For each, list which inputs are missing before any formula can be selected.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Adequate sample size follows the research question and assumptions—not a universal minimum.
+
+## Essential reading
+
+[@consort2025; @cook2018]

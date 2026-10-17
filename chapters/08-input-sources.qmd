@@ -1,0 +1,40 @@
+# Where Do Sample Size Inputs Come From? {#sec-input-sources}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Find defensible planning estimates.
+- Explain uncertainty in pilot and historical values.
+:::
+
+## The idea
+
+Anticipated prevalence, event risks, mean differences, standard deviations, ICC and AUC should be linked to relevant populations, instruments, outcomes and follow-up intervals. Candidate sources include systematic reviews, high-quality comparable studies, registries, feasibility studies and preliminary pilot work. Every borrowed estimate needs an explicit citation and rationale for transportability.
+
+## When and how to apply it
+
+Do not confuse a statistically significant result in an earlier paper with a clinically important target difference. When plausible inputs vary, calculate a sensitivity range rather than relying on one overly precise assumption. Record the outcome definition, denominators, follow-up time and study setting for each source.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+A prior study reports diabetes distress prevalence of 33% in a tertiary clinic. Would that be a defensible input for an urban primary-care sample? Document what must be checked.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+A small pilot SD is uncertain; using it as if known exactly can understate the risk of inadequate power.
+:::
+
+## Hands-on exercise
+
+Complete an input-provenance table for one protocol: parameter, value, unit, source, transferability and sensitivity range.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Every planning parameter needs a plausible source and sensitivity range.
+
+## Essential reading
+
+[@cook2018]

@@ -1,0 +1,58 @@
+# The Taro Yamane Formula {#sec-yamane}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- State the formula and its conventional approximations.
+- Identify circumstances in which it should not be used.
+:::
+
+## The idea
+
+The widely circulated **Yamane simplified formula** uses the finite population size $N$ and a selected error quantity $e$: $n=N/(1+Ne^2)$. It is commonly presented in introductory survey contexts as a simplified approximation broadly associated with 95% confidence and maximum variance for a proportion. These conditions are not replaceable by arbitrary confidence and prevalence inputs without returning to a more general method.
+
+## When and how to apply it
+
+Yamane should not be applied automatically to clinical trials, diagnostic sensitivity targets, cohort associations, complex surveys or estimation objectives requiring design-specific corrections. It is not a universal substitute for justifying the underlying estimand, sampling design and precision.
+
+## Formula at a glance
+
+$$
+n=\frac{N}{1+Ne^2}
+$$
+
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+For $N=1000$ and $e=0.05$, the formula yields $1000/(1+1000\times0.05^2)=285.71$, rounded upward to **286** complete observations.
+:::
+
+::: {.panel-tabset}
+
+### Calculation logic
+
+The example uses the stated planning assumptions and mathematical approximation. Explain why they apply before reporting the numerical result.
+
+### Copy-and-run R
+
+```r
+N <- 1000; e <- .05
+ceiling(N / (1 + N * e^2))
+```
+
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+This simplified result is not generally numerically identical to an explicitly specified general finite-population-adjusted proportion calculation.
+:::
+
+## Hands-on exercise
+
+Contrast Yamane with the conventional single-proportion calculation with finite population correction using the same $N$. Explain why the inputs and approximations matter.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+The Yamane formula is a narrow survey approximation, not an all-purpose calculator.

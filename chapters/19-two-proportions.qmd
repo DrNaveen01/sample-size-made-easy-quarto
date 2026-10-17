@@ -1,0 +1,47 @@
+# Sample Size for Two Independent Proportions {#sec-two-proportions}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Identify reference and intervention event probabilities.
+- Explain why the planning test and variance convention matter.
+:::
+
+## The idea
+
+A two-proportion planning problem requires the expected risk in each independent group, the clinically relevant difference, type I error and target power. The allocation ratio also matters. Formula variants differ in whether pooled variance is used under the null, whether alternative variance is unpooled, the form of the test, and whether corrections or exact methods are used.
+
+## When and how to apply it
+
+The simple equal-group normal formula below illustrates the dependence on event risks and their difference; it is **not guaranteed to match the calculator’s more specifically documented pooled-null/unpooled-alternative equality method**. Report the actual method used for the published calculation.
+
+## Formula at a glance
+
+$$
+n_{per\;group}\approx\frac{(Z_{1-\alpha/2}+Z_{1-\beta})^2[p_1(1-p_1)+p_2(1-p_2)]}{(p_2-p_1)^2}
+$$
+
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+An intervention study anticipates risks 20% and 30%, two-sided $\alpha=0.05$, and 80% power. Identify the ten-percentage-point target difference, group direction and assumptions before using the two-group module.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Binary outcome coding must represent the same event in both groups; changing from adverse-event risk to event-free survival reverses interpretation.
+:::
+
+## Hands-on exercise
+
+Use the calculator with equal and 2:1 allocation and record the resulting complete and recruitment targets separately.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+For two proportions, the chosen test, variance method and event definition must be explicit.
+
+## Essential reading
+
+[@cook2018; @consort2025]

@@ -1,0 +1,41 @@
+# Sample Size Made Easy {.unnumbered}
+
+**A Hands-On Practical Manual for Medical and Health Research**
+
+*Working manuscript — October 2026. This draft has not undergone external statistical peer review and must not be treated as a final reference for clinical protocol decisions.*
+
+::: {.callout-important appearance="simple"}
+## How this draft should be used
+
+This is the **baseline chapter manuscript**, not a finished textbook. Its short modules, original teaching cases, calculations, critical warnings, citations and exercises are available for editorial review. A second worked example in each chapter is intentionally reserved for the foundation-course material. Numerical examples are illustrations of specific assumptions and must be verified against the final chosen analytical method before publication.
+:::
+
+## What this book teaches
+
+The purpose of sample-size planning is not to obtain the smallest acceptable-looking number. It is to justify a study that can address a defined research question with useful precision or power under realistic assumptions. This book proceeds from research objectives and sampling design to numerical methods, sensitivity analysis and transparent reporting.
+
+**Audience.** Medical faculty, postgraduate residents, public health practitioners and researchers developing observational studies, clinical trials and diagnostic accuracy studies.
+
+**How to read.** Chapters are short and mostly independent. Start with Part I if the terminology is unfamiliar. Otherwise use the decision guide in Appendix B to locate the relevant method. Numerical worked examples, where present, use synthetic planning values rather than real patient-level data.
+
+## Companion calculator
+
+The companion open-source R/Shiny application is maintained separately at the [Sample Size Calculator GitHub repository](https://github.com/DrNaveen01/sample-size-calculator). The online book is intended to remain independently useful if the hosted application is unavailable. Calculator outputs use explicitly documented methods and rounding conventions, which must be matched to each published worked example.
+
+::: {.callout-warning appearance="simple"}
+## Scope limit
+
+This first-edition draft does not supply validated calculations for every design, including cluster-randomised trials, paired/repeated-measure outcomes, time-to-event endpoints or prediction-model development. Where a study lies outside the covered methods, use design-specific expertise rather than forcing an unrelated formula.
+:::
+
+## Navigation
+
+- **Part I:** Sampling, estimands and sample-size concepts.
+- **Part II:** Source parameters, non-response, finite population correction, design effect, ICC, clusters and allocation.
+- **Part III:** Single and two-group estimation and planning calculations.
+- **Part IV:** Trial hypotheses, clinical margins and planning plots.
+- **Part V:** Correlation and diagnostic accuracy.
+- **Part VI:** Method selection, calculator workflow, interpretation and reporting.
+- **Appendices:** Formula sheets, decision guide, R scripts, practice templates and glossary.
+
+*Publishing note:* the author line, imprint, ISBN, copyright and affiliation will be finalised before release. No endorsement from an institution is asserted in this draft.

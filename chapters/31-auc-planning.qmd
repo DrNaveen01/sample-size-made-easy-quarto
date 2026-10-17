@@ -1,0 +1,40 @@
+# Sample Size for ROC Curve and AUC {#sec-auc-planning}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- State the diagnostic objective for an AUC.
+- Explain how diseased and non-diseased counts affect AUC precision.
+:::
+
+## The idea
+
+The area under an ROC curve (AUC) summarises rank discrimination across thresholds. Planning to **estimate** AUC requires a precision target, while testing against a reference AUC requires a null value, anticipated value, alpha and power. Traditional Hanley–McNeil approximations express the AUC variance as a function of AUC and counts of reference-standard-positive and reference-standard-negative participants.
+
+## When and how to apply it
+
+An AUC calculation does not replace planning based on sensitivity at a clinically chosen threshold, calibration, positive predictive value or decision utility. Disease spectrum, reference-standard quality and intended use influence interpretation.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+A clinical biomarker is expected to achieve AUC 0.80. Specify whether the aim is a confidence interval of half-width 0.05 or a test of AUC against 0.65.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Using an AUC of 0.80 without planning the diseased and non-diseased composition can produce a misleading total sample size.
+:::
+
+## Hands-on exercise
+
+Vary expected AUC and allocation between disease strata in the AUC module; record the assumptions behind its variance model.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+AUC planning is not interchangeable with threshold-specific diagnostic accuracy planning.
+
+## Essential reading
+
+[@hanley1982]

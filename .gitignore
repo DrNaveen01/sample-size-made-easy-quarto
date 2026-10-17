@@ -1,0 +1,17 @@
+/_book/
+/.quarto/
+/_freeze/
+.Rproj.user/
+.Rhistory
+.RData
+*.log
+*.aux
+*.out
+*.toc
+*.synctex.gz
+.DS_Store
+
+**/*.quarto_ipynb
+.Rproj.user
+.httr-oauth
+.quarto

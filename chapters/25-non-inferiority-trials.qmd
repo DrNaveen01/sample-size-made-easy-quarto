@@ -1,0 +1,40 @@
+# Non-Inferiority Trials {#sec-non-inferiority-trials}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Identify the non-inferiority margin and signed effect.
+- Read the relevant confidence-interval boundary.
+:::
+
+## The idea
+
+A non-inferiority trial seeks to rule out a prespecified, unacceptably large loss of benefit, rather than to prove treatments identical. If larger responses are favourable and $\Delta=effect_{new}-effect_{control}$, a commonly used convention sets the lower non-inferiority boundary at $-M$. The non-inferiority claim requires the appropriate one-sided lower confidence bound to exceed $-M$ under the prespecified framework.
+
+## When and how to apply it
+
+The margin must be justified clinically and, when an active control is involved, with relevant historical evidence and assumptions. Prespecify whether lower or higher values indicate benefit. Non-inferiority requires careful consideration of estimand, adherence and analysis populations.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+New versus standard treatment has a hypothetical margin of five percentage points on a higher-is-better recovery proportion. Label the unacceptable region below -0.05 and interpret intervals that cross the margin.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+A confidence interval that includes zero can still be compatible with non-inferiority; an interval crossing the non-inferiority margin does not establish it.
+:::
+
+## Hands-on exercise
+
+Compare three hypothetical confidence intervals with the same margin: (-0.04,0.02), (-0.07,0.01), (0.01,0.06). Which support non-inferiority? Explain.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Non-inferiority requires ruling out unacceptable harm against a justified margin.
+
+## Essential reading
+
+[@ichE9; @cook2018]

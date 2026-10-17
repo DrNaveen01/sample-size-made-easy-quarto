@@ -1,0 +1,59 @@
+# Finite Population Correction {#sec-finite-population-correction}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Identify the assumptions supporting FPC.
+- Distinguish finite-population precision from finite-clinic recruitment.
+:::
+
+## The idea
+
+Finite population correction is relevant when estimating features of an explicitly finite population under an appropriate sampling-without-replacement design. For simple random sampling without replacement, a conventional first approximation adjusts an independently computed planning sample size $n_0$ using $n_{FPC}=n_0/[1+(n_0-1)/N]$. The planning target and exact variance convention should be checked before applying it.
+
+## When and how to apply it
+
+FPC becomes meaningful as the sampling fraction grows. It is not automatically suitable for cluster sampling, repeated observations, a clinical trial or inference to future patients. If the sampling unit is an institution rather than an individual, the finite population must be defined at the correct level.
+
+## Formula at a glance
+
+$$
+n_{FPC}=\frac{n_0}{1+(n_0-1)/N}
+$$
+
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+An illustrative finite registry of $N=1000$ eligible workers and uncorrected $n_0=384.16$ leads to a corrected planning value near 278. That differs from Taro Yamane because the approaches begin with different assumptions and approximations.
+:::
+
+::: {.panel-tabset}
+
+### Calculation logic
+
+The example uses the stated planning assumptions and mathematical approximation. Explain why they apply before reporting the numerical result.
+
+### Copy-and-run R
+
+```r
+N <- 1000; n0 <- 1.96^2 * .5 * .5 / .05^2
+n_fpc <- n0 / (1 + (n0 - 1)/N)
+ceiling(n_fpc)
+```
+
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Do not enter “annual OPD attendance” as $N$ unless that quantity truly represents the finite population being sampled.
+:::
+
+## Hands-on exercise
+
+For $N=500$, $1000$ and $10000$, hold $n_0$ constant and compare the correction. State the assumptions.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Finite population correction requires an eligible finite-population sampling design.

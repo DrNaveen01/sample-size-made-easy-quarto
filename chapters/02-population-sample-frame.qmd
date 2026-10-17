@@ -1,0 +1,40 @@
+# Population, Sample, Census and Sampling Frame {#sec-population-sample-frame}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Define target and accessible populations.
+- Identify problems caused by incomplete sampling frames.
+:::
+
+## The idea
+
+The **target population** is the population to which results are intended to apply. The **accessible population** is reached through the actual recruitment setting. The **sampling frame** is the list or operational mechanism from which sampling occurs. A **census** attempts to observe all eligible members of a defined population; a sample observes a subset.
+
+## When and how to apply it
+
+The intended inference must match the selection mechanism. A hospital-based consecutive sample is not a random sample of every person with the disease in the district. Even perfect arithmetic for sample size cannot repair a mismatch between target population and sampling frame.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+Consider hypertension prevalence among all district adults, among patients registered at one health centre, and among patients visiting that centre on study days. Each is a different target.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+A known hospital footfall is not automatically the finite population size appropriate for a finite population correction.
+:::
+
+## Hands-on exercise
+
+Draw a three-level diagram: target population → accessible population → analysed sample. Annotate inclusion, exclusion and non-participation.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+The sampling frame determines who can be sampled; it does not by itself establish generalisability.
+
+## Essential reading
+
+[@consort2025]

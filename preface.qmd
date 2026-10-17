@@ -1,0 +1,24 @@
+# Preface {.unnumbered}
+
+Sample-size planning is a recurring challenge in postgraduate medical education. Investigators are often presented with a formula before they have clearly identified the question that formula should answer. The more important decisions concern the outcome, estimand, sampling design, credible prior information and acceptable uncertainty.
+
+This manual is intended to support foundation-course teaching and practical protocol development. Most chapters can be read in one sitting. Clinical scenarios introduce each method, mathematical expressions are explained in context, and self-check exercises invite the reader to justify the calculation rather than copy a result.
+
+The book is companion material to an open-source R/Shiny application, but does not presume that software selection guarantees correct methods. Each calculation is conditional on its assumptions. Non-inferiority margins, cluster sampling, diagnostic disease strata and choices of confidence-interval method receive particular attention because they are common sources of misinterpretation.
+
+## Editorial status
+
+::: {.callout-note appearance="simple"}
+This edition is a **scientific and structural baseline**. The 300-slide resident/foundation-course teaching archive and its original worked examples have **not yet been imported**. Numerical examples that are already included are labelled illustrative. The full review record is maintained in `editorial/chapter-status.csv`, and the practical submission checklist in `editorial/REVIEW-PROTOCOL.md`.
+:::
+
+## Conventions
+
+- $n_0$: unadjusted planning size (usually unrounded).
+- $n_{complete}$: required usable observations after final whole-number rounding.
+- $n_{recruit}$: planned number to recruit after separately justified losses.
+- $\alpha$: selected type I error rate; $1-\beta$: power under the chosen alternative.
+- Group differences are always defined by group order and outcome direction.
+- Probability inputs are stated on the 0–1 scale in mathematical expressions; calculator interface units must be checked separately.
+
+References are consolidated at the end of the book. All calculations and claims remain subject to editorial and independent statistical review.

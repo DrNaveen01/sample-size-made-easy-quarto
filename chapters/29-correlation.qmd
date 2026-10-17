@@ -1,0 +1,43 @@
+# Sample Size for Correlation Studies {#sec-correlation}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Distinguish estimating correlation from testing a correlation.
+- Identify independence and model assumptions.
+:::
+
+## The idea
+
+A correlation study may aim to estimate a population correlation with acceptable precision, test the correlation against a prespecified null value, or compare independent correlations. For the Pearson correlation, a common approximate approach uses Fisher’s transformation $z=\operatorname{atanh}(r)$ with variance approximately $1/(n-3)$. Precision on the transformed scale is not identical to a symmetric half-width on the original correlation scale.
+
+## When and how to apply it
+
+Pearson correlation describes linear association and can be affected by outliers, restricted ranges and nonlinearity. The present calculator uses a documented uncorrected Fisher-z normal approximation; it is not an exact Pearson t-test power calculation.
+
+## Formula at a glance
+
+$$
+z_r=\operatorname{atanh}(r)=\frac12\ln\left(\frac{1+r}{1-r}\right)
+$$
+
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+A study anticipates $r=0.30$ between BMI and systolic blood pressure. Compare the research questions “estimate $r$ precisely” and “test $r$ against zero.”
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Do not interpret correlation as causation or use the independent-correlation method for repeated measures from the same participants.
+:::
+
+## Hands-on exercise
+
+Plan a correlation study with an anticipated $r=0.30$ and examine the sample size for different precision or power targets.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Correlation precision and correlation testing are different design objectives.

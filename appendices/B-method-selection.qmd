@@ -1,0 +1,35 @@
+# Method-Selection Decision Guide {#sec-method-selection-guide}
+
+## Work backwards from the primary objective
+
+| Design / objective | Outcome or target | Starting chapter | Calculator status |
+|---|---|---|---|
+| Estimate one population proportion | Binary, percentage or prevalence | @sec-single-proportion | Supported with stated approximations |
+| Estimate a population mean | Continuous | @sec-single-mean | Supported with stated approximations |
+| Compare two independent proportions | Binary, two groups | @sec-two-proportions | Supported for documented objectives |
+| Compare two independent means | Continuous, two groups | @sec-two-means | Supported under documented normal approximations |
+| Non-inferiority / equivalence | Two independent groups with prespecified margin | @sec-non-inferiority-trials / @sec-equivalence-trials | Supported for documented two-group methods |
+| Estimate / test Pearson correlation | Paired measurements on independent people | @sec-correlation | Approximate Fisher-z module |
+| Estimate diagnostic Se or Sp | Diseased / non-diseased strata | @sec-sensitivity-specificity | Wilson/Wald approximate modules |
+| Estimate or compare ROC AUC | Diseased / non-diseased groups | @sec-auc-planning | Hanley–McNeil approximate modules |
+| Cluster-randomised trial | Randomisation at cluster level | @sec-cluster-size | **Not a complete supported calculation** |
+| Paired mean / repeated measures | Correlated longitudinal or paired outcomes | @sec-method-selection | **Not currently supported** |
+| Time-to-event trial | Survival / hazard | @sec-method-selection | **Not currently supported** |
+| Clinical prediction model development | Calibration, shrinkage, outcome events | @sec-method-selection | **Not currently supported**; use design-specific guidance [@riley2020] |
+
+::: {.callout-important appearance="simple"}
+A design that is not supported must not be forced through the closest-looking formula. Consultation or a specialised validated method is necessary.
+:::
+
+## Ten-question pre-calculation checklist
+
+1. What population and clinical question are being studied?
+2. What is the primary outcome and measurement time?
+3. Which estimand is of interest?
+4. Is the goal precision or hypothesis testing?
+5. Are observations independent, paired, repeated or clustered?
+6. Is there a defensible target effect or precision requirement?
+7. Where do planning values and uncertainty ranges come from?
+8. What allocation, design, finite-population and recruitment assumptions apply?
+9. Which analytic test or confidence-interval procedure is anticipated?
+10. Can the calculation be replicated and its limitations reported?

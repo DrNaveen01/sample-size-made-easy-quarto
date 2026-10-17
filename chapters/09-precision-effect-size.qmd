@@ -1,0 +1,40 @@
+# Precision, Effect Size and Clinically Important Difference {#sec-precision-effect-size}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Separate clinical importance from statistical detectability.
+- Specify effect units before calculating sample size.
+:::
+
+## The idea
+
+Absolute precision describes the tolerated uncertainty in an estimated quantity. An **effect size** describes the magnitude of a difference or association. For a continuous outcome, the target difference should generally be stated in the outcome’s natural units and justified clinically; a standardised difference may help comparability but cannot replace the original clinical scale.
+
+## When and how to apply it
+
+For binary outcomes, a risk difference of 0.05 means five percentage points, not five percent relative change. The same odds ratio can correspond to different absolute changes at different baseline risks. Define whether a reported difference is clinically meaningful, realistic or both.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+A researcher selects a 5-mmHg systolic blood pressure difference, while another chooses 10 mmHg. With the same SD, which requires a larger sample?
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+Do not choose an unrealistically large effect just to make the sample size affordable.
+:::
+
+## Hands-on exercise
+
+Draft a justification for a minimum important difference using patient relevance, previous literature and feasibility.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Choose clinically meaningful differences before learning how many participants are needed.
+
+## Essential reading
+
+[@cook2018]

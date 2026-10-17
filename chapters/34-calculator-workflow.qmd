@@ -1,0 +1,36 @@
+# Using the Sample Size Calculator {#sec-calculator-workflow}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Reproduce a calculation transparently in the application.
+- Identify where assumptions and rounding are documented.
+:::
+
+## The idea
+
+The [Sample Size Calculator repository](https://github.com/DrNaveen01/sample-size-calculator) contains the R/Shiny code, methods notes, validation documentation and reporting features. Start with the chosen **method and estimand**, not the user interface. Enter probabilities in the units requested by the UI, verify group order, inspect assumptions and examine the numerical substitution before recording a final target.
+
+## When and how to apply it
+
+The application supports several normal-approximation methods and downloadable calculations. It is an adjunct to judgement rather than a substitute. The book may refer to software modules that change between releases: each final worked example should identify the tested app version and date.
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+Reproduce the single-proportion example $p=0.50$, $d=0.05$, 95% confidence; compare reported complete size, nonresponse inflation convention and the textual report.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+A screenshot or export from software is not enough methodological justification for a protocol.
+:::
+
+## Hands-on exercise
+
+Use the README to run the app locally. Capture inputs, method, assumptions, generic formula, substitution and interpretation.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+The calculator documents an eligible calculation; it does not decide scientific validity.

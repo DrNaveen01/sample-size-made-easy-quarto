@@ -1,0 +1,47 @@
+# Comparing Diagnostic AUCs {#sec-compare-aucs}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Differentiate paired from independent ROC studies.
+- Explain the role of covariance in paired AUC comparisons.
+:::
+
+## The idea
+
+When two tests are applied to the same participants, their estimated AUCs are statistically dependent. The variance of their difference is $V_1+V_2-2\operatorname{Cov}(AUC_1,AUC_2)$. Independent test cohorts instead have zero between-estimator covariance under the intended design. Correlation between the **estimated AUCs** is not interchangeable with ordinary correlation between raw test scores.
+
+## When and how to apply it
+
+A paired design can be efficient but requires justified assumptions about correlation or pilot-data covariance. Methods such as DeLong’s can be used for correlated ROC data in appropriate analysis contexts; planning from reliable pilot data or simulation may be preferable for complex distributions.
+
+## Formula at a glance
+
+$$
+\operatorname{Var}(\widehat A_1-\widehat A_2)=V_1+V_2-2\operatorname{Cov}(\widehat A_1,\widehat A_2)
+$$
+
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+Two biomarkers are measured in every patient, with anticipated AUCs 0.80 and 0.75. Explain why two independent-group sample-size calculations would be inappropriate.
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+A single guessed raw score correlation should not be entered as though it were the correlation of estimated AUCs.
+:::
+
+## Hands-on exercise
+
+Use the calculator covariance-sensitivity display and show how results vary across plausible AUC-estimate correlations.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Paired AUC planning needs between-estimator covariance, not just raw-score correlation.
+
+## Essential reading
+
+[@delong1988; @hanley1982]

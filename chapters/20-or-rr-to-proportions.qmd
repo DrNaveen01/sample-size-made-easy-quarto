@@ -1,0 +1,58 @@
+# Using OR and RR to Derive Expected Proportions {#sec-or-rr-to-proportions}
+
+::: {.callout-note appearance="simple" title="Learning objectives"}
+- Convert an expected RR into a second-group risk.
+- Convert an OR without mistaking it for an RR.
+:::
+
+## The idea
+
+Some reference studies provide a baseline outcome risk and an anticipated relative effect instead of two group probabilities. With a risk ratio $RR=p_2/p_1$, the planned group 2 risk is $p_2=RR\times p_1$. With an odds ratio, the conversion is nonlinear: $p_2=OR\,p_1/(1-p_1+OR\,p_1)$. The event definition, effect direction and transportability of baseline risk must remain consistent.
+
+## When and how to apply it
+
+Both transformations are planning conveniences. Estimates adjusted for covariates, marginal risks and conditional odds ratios may not be directly interchangeable. Check that the implied probability lies in [0,1] and that the reference effect is appropriate for the planned participants.
+
+## Formula at a glance
+
+$$
+p_2=RR\,p_1 \qquad p_2=\frac{OR\,p_1}{1-p_1+OR\,p_1}
+$$
+
+
+## Teaching case 1 — baseline draft
+
+::: {.callout-tip appearance="simple" title="Clinical scenario / initial worked example"}
+Suppose baseline event risk is 0.20 and planned RR is 1.5. The group 2 risk is $0.20\times1.5=0.30$. For OR 1.5, the group 2 risk is instead $0.2727$.
+:::
+
+::: {.panel-tabset}
+
+### Calculation logic
+
+The example uses the stated planning assumptions and mathematical approximation. Explain why they apply before reporting the numerical result.
+
+### Copy-and-run R
+
+```r
+p1 <- .20; rr <- 1.5; or <- 1.5
+c(from_rr = rr*p1, from_or = or*p1/(1-p1+or*p1))
+```
+
+:::
+
+::: {.callout-warning appearance="simple" title="Common error"}
+An OR of 2 does not generally mean that risk doubles.
+:::
+
+## Hands-on exercise
+
+Repeat both conversions when the baseline risk is 0.05, 0.20 and 0.50, then comment on the divergence.
+
+::: {.callout-note collapse="true" title="Worked example 2 — insert from the teaching slides"}
+**Editorial placeholder, not a validated example.** Add the second clinical example after review of the 300-slide foundation-course material. Supply the reference, parameter provenance, generic formula, numerical substitution, assumptions, complete sample size, recruitment adjustment, R script and calculator-version match. Remove this box only after statistical review.
+:::
+
+## Key message
+
+Risk ratios and odds ratios imply different second-group probabilities except in special cases.
