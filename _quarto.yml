@@ -1,5 +1,5 @@
 project:
-  type: book
+  type: docs
   output-dir: _book
 book:
   title: Sample Size Made Easy
